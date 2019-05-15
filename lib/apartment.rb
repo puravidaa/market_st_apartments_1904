@@ -5,7 +5,7 @@ class Apartment
       @monthly_rent = monthly_rent
       @bathrooms = bathrooms
       @bedrooms = bedrooms
-      @renters = [] 
+      @renters = nil
     end
 
     def renter
@@ -14,6 +14,6 @@ class Apartment
 
 
     def add_renter(renter)
-      @renters << renter
+      @renters = renter
     end
 end
